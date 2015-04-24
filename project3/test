@@ -1,0 +1,5 @@
+grep -i "HURR"master1.txt > new.text
+
+sed s/NAMED//g new.txt > new1.txt
+
+awk '{print $1 FS $7}' new1.txt > Id_and_year.txt
